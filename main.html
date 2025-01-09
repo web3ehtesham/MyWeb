@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Shape Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header */
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Homepage sections */
+    .section {
+      padding: 20px;
+      margin: 10px 0;
+    }
+
+    .section:nth-child(odd) {
+      background-color: #ecf0f1;
+    }
+
+    .section:nth-child(even) {
+      background-color: #bdc3c7;
+    }
+
+    .rectangle {
+      width: var(--width, 127px);  /* Default width is 127px */
+      height: var(--height, 36px); /* Default height is 36px */
+      background-color: #3498db;   /* Background color */
+      margin: 20px auto;          /* Center alignment */
+    }
+  </style>
+</head>
+<body>
+  <!-- Website Name -->
+  <header>
+    <h1>My Awesome Website</h1>
+  </header>
+
+  <!-- Homepage Content -->
+  <div class="section">
+    <h2>About Us</h2>
+    <p>Welcome to our website! We aim to provide the best services and information to our users. Feel free to explore and learn more about what we offer.</p>
+    <div class="rectangle" style="--width: 200px; --height: 50px;"></div> <!-- Example of a rectangle -->
+  </div>
+
+  <div class="section">
+    <h2>Services</h2>
+    <p>We specialize in web development, design, and digital marketing. Our expert team ensures quality and client satisfaction at every step.</p>
+  </div>
+
+  <div class="section">
+    <h2>Portfolio</h2>
+    <p>Here are some of our recent projects:</p>
+    <ul>
+      <li><a href="project1.html" class="project-link">Project 1 - E-commerce Website</a></li>
+      <li><a href="project2.html" class="project-link">Project 2 - Mobile Application</a></li>
+      <li><a href="project3.html" class="project-link">Project 3 - Branding and Design</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or want to work with us, feel free to reach out:</p>
+    <p>Email: info@awesome-website.com</p>
+    <p>Phone: +123 456 7890</p>
+  </div>
+</body>
+</html>
